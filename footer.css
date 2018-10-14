@@ -28,3 +28,34 @@ footer img {
     position: absolute; 
     right: 30px;
 }
+
+/* Responsiv */
+
+@media screen and (max-width: 1185px) {
+    footer img {
+        left: 15px;
+        top: 80px; 
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    footer button {
+        left: 450px; 
+        top: 0; 
+    }
+
+    footer p {
+        font-size: 14px; 
+        margin: 50px auto 0 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer p {
+        margin: 30px auto 0 20px;
+        width: 300px; 
+    }
+    footer button {
+        display: none; 
+    }
+} 

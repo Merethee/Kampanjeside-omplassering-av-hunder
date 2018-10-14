@@ -108,3 +108,13 @@ button:hover {
   #fade:hover ~ #boxclose {
     display: none;
   }
+
+
+  @media screen and (max-width: 600px) {
+      #menu li {
+          display: none; 
+      }
+      #menu button{
+        right: 120px; 
+      }
+  }

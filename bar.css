@@ -64,3 +64,22 @@
 }
 
 
+
+@media screen and (max-width: 1185px) {
+    #fill-container {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    #fill-container {
+        left: 20px; 
+        top: 170px; 
+    }
+}
+

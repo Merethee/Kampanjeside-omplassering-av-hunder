@@ -96,3 +96,11 @@
 .popup .close:hover {
     color:#7f8851;
 }
+
+
+/* Responsiv */
+@media screen and (max-width: 1185px) {
+    .knapp-popup {
+        display: none; 
+    }
+}

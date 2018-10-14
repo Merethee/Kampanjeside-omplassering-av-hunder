@@ -34,7 +34,10 @@ button {
     border: 0;  
     padding: 10px;
 }
- 
+button:hover {
+    background-color: #7f8851;
+}
+
 .seksjon {
     width: 50%; 
     height: 100vh;
@@ -64,6 +67,7 @@ button {
 .en.bilde img  { 
     left: 0; 
     object-position: top left; 
+    position: absolute;
  }
 
  .en.tekst h1 {
@@ -313,3 +317,162 @@ a#jump {
 	margin-top: -15px;
     margin-left: -35px;
 }
+
+
+/* Responsiv */
+
+@media screen and (max-width: 1185px) {
+    
+    .en.tekst h1 {
+        font-size: 2rem;
+        top: 200px;
+        left: 800px; 
+    }
+    .en hr {
+        width: 150px; 
+        top: 400px;
+    }
+   
+    @keyframes grow {
+        from {
+            opacity: 0;
+            width: 0; 
+        }
+    
+        to {
+            opacity: 1;
+            width: 150px;
+        }
+    }   
+
+    #jump {
+        display: none; 
+    }
+
+    .fem.tekst img {
+       display: none;  
+    }
+
+    .speech-bubble{
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1055px) {
+
+    .seksjon.en {
+        height: 600px;
+    }
+    .en.bilde img  { 
+        left: 0; 
+        object-position:left bottom;  
+        object-fit: fill; 
+        height: 600px;
+
+     }
+
+    .en.tekst h1 {
+       display: none; 
+    }
+    .en hr {
+        display: none; 
+    }
+    .to.tekst p {
+        font-size: 14px; 
+     }
+
+     .to.bilde img {
+      display: none; 
+    
+    } 
+
+    .tre.tekst p{
+        color: black; 
+        font-size: 14px; 
+        left: -200px; 
+   
+    }
+
+    .tre.bilde img  { 
+        left: 0; 
+        object-position:left bottom;  
+        object-fit: fill; 
+     }
+
+     .fire.bilde img {
+         display: none; 
+     }
+
+     .fire.tekst p {
+        font-size: 14px; 
+
+     }
+
+
+    .fem.bilde img { 
+        left: 0; 
+        object-position:left bottom;  
+        object-fit: fill; 
+     }
+
+     .fem.tekst p {
+        color: #f8f1df;
+        font-size: 14px; 
+        left: -200px; 
+        text-align: left; 
+    }
+
+    
+    .fem li {
+        text-align: left; 
+        color: #f8f1df;
+        font-size: 14px; 
+        left: -200px;  
+    }
+
+    .seks.tekst p {
+        font-size: 14px; 
+       
+    }
+    .seks.bilde img {
+        display:none; 
+    }
+    
+    .seks.tekst img {
+        display: none; 
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .to.tekst p {
+        left: 20px; 
+        width: 300px; 
+    }
+
+    .tre.tekst p {
+        width: 350px; 
+        top: 50px; 
+    }
+
+    .fire.tekst p {
+        left: 20px; 
+        width: 350px; 
+    }
+
+    .fem li {
+        width: 300px;
+    }
+        
+    .seks.tekst p {
+        left: 20px; 
+        width: 300px; 
+       z-index: 99999;
+    }
+}
+
+
+
+
