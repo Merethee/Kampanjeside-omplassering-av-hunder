@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omplassering av hunder</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="paw-animate.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="bar">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
+    </div>
+    <nav id="menu">
+            <div id="box">
+                <a class="boxclose" id="boxclose" onclick="videobox_close();"></a>
+                <video id="dog-video" width="600" controls>
+                    <source src="video/fod.mp4" type="video/mp4">
+                    <!--Browser does not support <video> tag -->
+                    </video>
+                </div>
+            <div id="fade" onClick="videobox_close();"></div>
+        <ul>
+            <li><a id="hover" href="#" onclick="videobox_open();">Hundene <img src="img/play.png"></a></li>
+            <li><a href="#livredder">Livredder</a></li>
+            <li><a href="http://www.fod.no/" target="_blank">FOD</a></li>
+        </ul>
+        <button onclick="location.href='http://www.fod.no/hunder-til-omplassering/'" type="button" target="_blank" >
+            Se våre hunder</button>
+    </nav>
+    <div id="dialog" title="Livredder">
+            <p><strong>Hjelp oss med å redde hundene!</strong><br><br>
+                Å være livredder handler om å gi månedlige bidrag 
+                til hundene på FOD-gården. Mer informasjon finner 
+                du på seksjonen: <a href="#livredder">Livredder</a>
+            </p> 
+        </div>
+    <div class="seksjon en bilde">
+        <img src="img/bilde1.jpg" alt="dog1">
+    </div>
+    <div class="seksjon en tekst">
+        <h1>
+            Hei!<br> Mitt navn er Leo,<br> og jeg trenger et<br> nytt hjem.
+        </h1>
+        <hr>
+        <a id="jump" href="#jump_one">
+            <img src="img/paw-brown.png" alt="labb">
+        </a>
+    </div>
+    <div class="seksjon to tekst" id="jump_one"> 
+        <div class="text-animate">
+            <p  style="font-size: 1.2rem; "><strong>Litt om meg</strong></p>
+            <br>
+            <p>
+            Jeg har bodd på FOD gården i 1 år, 
+            hvor jeg trives svært godt. De mater og pleier meg, 
+            og tar meg med på lange turer.</p>
+            <br>
+            <p  style="font-size: 1.1rem; "><strong>Men jeg trenger et nytt hjem og håper 
+            at du er den riktige eieren for meg!</strong></p>
+            <br>
+            <p > Jeg er glad i mennesker og andre hunder. 
+            Jeg elsker å være ute i naturen, men jeg er også 
+            en av de som liker å dra meg ekstra lenge på morningen.</p>
+       
+        <div id="fill-container">
+            <p>Noen av mine egenskaper: </p>
+                <div class="fill energi" >
+                    <div class="fill-bar" id="fill-en" style="width: 80px; background-color: #ca9b8b;">
+                        <p> 
+                            Energi
+                        </p>
+                    </div>
+                </div>
+                <div class="fill stell">
+                    <div class="fill-bar" id="fill-to" style="width: 50px; background-color: #6b463e; ">
+                        <p>
+                            Stell
+                        </p>
+                    </div>
+                </div>
+                <div class="fill vennlig">
+                    <div class="fill-bar" id="fill-tre" style="width: 80px; background-color: #7f8851; ">
+                        <p>
+                            Vennlighet 
+                        </p>
+                    </div>
+                </div>
+                <div class="fill stimuli">
+                    <div class="fill-bar" id="fill-fire" style="width: 60px; background-color: #423e4d; ">
+                        <p>
+                            Stimuli
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seksjon to bilde">
+        <img src="img/bilde2.jpg" alt="dog2">
+            <div class="knapp-popup">
+                <input type="checkbox" id="cb">
+                <div class="text-animate">
+                <label for="cb" id="btnPopup">
+                    <div>Mer om rasen</div>
+                </label>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <input type="checkbox" id="cb">
+                    <label for="cb" class="close">
+                        <div>X</div>
+                    </label>
+                    <div class="content">
+                        <p>
+                            <strong>Boxweiler</strong> er en aktiv, glad hund. Full av energi, 
+                            og er svært intelligente og lojale. De er vanligvis
+                            vennlige, men kan bli ganske beskyttende og vil holde
+                            øye med fremmede.<br><br>
+                            De er moderat avhengige, noe som betyr at de kan være alene,
+                            men de er utsatt for separasjonsangst hvis de forlater seg
+                            i lange perioder. Boxweilers er vanligvis gode med andre hunder,
+                            selv om tidlig sosialisering er nøkkelen. De er veldig gode med barn,
+                            så lenge de er sosialisert riktig.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seksjon tre bilde">
+        <img src="img/bilde3.jpg" alt="dog3">
+    </div>
+    <div class="seksjon tre tekst">
+        <div class="text-animate">
+            <div class="paw-animate">
+                <div class="paw-container cream">
+                    <img class="paw-cream" src="img/paw-animate-cream.png" alt="paw-cream">
+                    <span class="cover"></span>
+                </div>
+            </div>
+        <p>
+            <strong style="font-size: 1.1rem; ">Hvorfor adoptere et nytt familiemedlem?</strong><br><br>
+            Det finnes svært mange familiedyr i Norge som
+            trenger nye hjem. Dette har flere årsaker, 
+            men i all hovedsak er det rett og slett flere 
+            dyr enn det er gode hjem. <br><br>Så lenge det fortsettes
+            å avle på familiedyr i samme grad som i dag vil 
+            det alltid være et overskudd av dyr som trenger nye hjem. 
+            Derfor bør man ikke støtte videre oppdrett, men heller 
+            hjelpe noen av de mange dyrene som sårt trenger et nytt hjem. 
+        </p>
+        </div>
+    </div>
+    <div class="seksjon fire tekst" id="livredder">
+        <div class="text-animate">
+        <p>
+            <strong style="font-size: 1.1rem;">Livredder</strong><br>
+            <strong style="font-size: 1rem;">Gi et månedlig bidrag som hjelper hundene</strong><br><br>
+            Du kan også ta del i dette arbeidet ved å bli en livredder. Mange av 
+            dyrene som kommer til oss har fysiske og følelsesmessige traumer som krever 
+            behandling og rehabilitering. Ofte har dyrene behov for kostbar medisinsk hjelp. 
+            <br><br>
+            Uansett hvilken tilstand dyrene er i når de kommer til oss, ønsker vi å gjøre vårt 
+            ytterste for å skape en bedre hverdag og en sikker fremtid for dem. Vi er helt 
+            avhengige av din støtte for å kunne fortsette vårt viktige arbeid for dyrene som 
+            trenger vår hjelp. Din gave bidrar til å forandre og forbedre livene til svært 
+            mange dyr.
+        </p>
+        <button id="hover-btn" onclick="location.href='http://www.fod.no/bli-en-livredder/'" type="button" target="_blank" >
+            Bli en Livredder</button>
+        </div>
+    </div>
+    <div class="seksjon fire bilde" >
+        <img  id="bilde-endres" src="img/bilde4.jpg" alt="dog4">
+    </div>
+    <div class="seksjon fem bilde">
+        <img  src="img/bilde5.jpg" alt="dog5">
+    </div>
+    <div class="seksjon fem tekst">
+        <div class="text-animate">
+        <img src="img/paw-green.png" alt="paw-green">
+        <p> <strong style="font-size: 1.1rem;">Gode huskeregler</strong></p>
+        <ol>
+            <li>Ta alltid det nye familiemedlemmet til en veterinærsjekk etter at det har funnet roen hos deg</li><br>
+            <li>Sørg alltid for at hunden er forsikret</li><br>
+            <li> Husk at dyret kan ha hatt dårlige opplevelser du ikke kjenner til</li><br>
+            <li>Sett deg inn i dyreartens kroppsspråk for å kunne tolke signaler på frykt og stress</li><br>
+            <li>Vis hensyn og la dyret bruke tid på å venne seg til et nytt hjem og nye rutiner</li><br>
+            <li>Skaff deg god kunnskap! Les bøker og artikler</li><br>
+        </ol>
+        </div>
+    </div>
+    <div class="seksjon seks tekst">
+        <div class="text-animate">
+        <p>
+            Det er ikke bare jeg som trenger et nytt hjem.  
+            Jeg har fått mange nye venner på FOD gården 
+            som også ønsker å finne sin nye eier.
+            Du er hjertlig velkommen til å besøke oss på gården. 
+            <br><br>
+            Her kan du se om du får god kontakt med meg eller noen av
+            de andre hundene. Du har også mulighet til å ha med oss hjem,
+            for å se hvordan vi vil passe inn i deres hverdag før du tar valget. 
+            Gi oss en sjanse til å bli bedre kjent. 
+            <br><br>
+            <strong style="font-size: 1.1rem;">Ser frem til å møte deg! </strong>
+        </p>
+    </div>
+        <div class="paw-animate">
+        <div class="paw-container dark">
+                <img class="paw-dark" src="img/paw-animate-dark.png" alt="paw-dark">
+                <span class="cover"></span>
+            </div>
+        </div>
+    </div>
+    <div class="seksjon seks bilde">
+        <img src="img/bilde6.jpg" alt="dog6">
+        <div class="speech-bubble">Kommer du å hilser på meg?</div>
+    </div>
+    <footer>
+        <div class="text-animate">
+        <p>På FOD gården er det over 20 hunder 
+            som venter på et nytt hjem. Les mer om hundene.
+        </p>
+        <button onclick="location.href='http://www.fod.no/hunder-til-omplassering/'" type="button" target="_blank" >
+        Se våre hunder</button>
+        <img src="img/FOD-Logo.png" alt="FOD">
+    </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

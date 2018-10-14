@@ -1,0 +1,30 @@
+footer {
+    width: 100vw; 
+    height: 200px; 
+    background-color: #f8f1df;
+}
+
+footer p {
+    width: 440px;
+    height: auto;
+    margin: 80px auto 0 300px;
+    font-weight: 700; 
+}
+
+footer button  {
+    width: 160px;
+    height: 40px; 
+    z-index: 1;
+    background-color: #6b463e;  
+
+    position: relative;
+    left: 900px;
+    top: -40px;  
+}
+
+footer img {
+    width: 200px;
+    height: auto;
+    position: absolute; 
+    right: 30px;
+}

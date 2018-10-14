@@ -1,0 +1,98 @@
+
+.knapp-popup {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: -500px;
+    left: 50px;
+}
+
+#btnPopup {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #222;
+    font-weight: 700;
+    background-color: #7f8851;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+
+    transition: all 5s ease-in-out;
+    animation: scale 2s ease-in-out infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cb {
+    display: none;
+}
+
+#popup1{
+    position: relative;
+    left: 0;
+}
+
+.overlay {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 70px;
+    left: 0; 
+
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid #333;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cb:checked~.overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.content p {
+    width: 420px;
+    margin-top: 70px;
+    margin-left: 30px;
+    line-height: 1.6em;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 20px;
+
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color:#7f8851;
+}

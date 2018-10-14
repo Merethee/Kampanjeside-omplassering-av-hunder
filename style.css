@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    cursor: none; 
+}
+
+html {
+    font-family: 'montserrat', sans-serif; 
+    font-weight: 400; 
+    font-size: 16px; 
+    line-height: 1.6em; 
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+ }
+
+button {
+    width: 180px;
+    border-radius: 50px;
+    font-family: 'montserrat', sans-serif; 
+    color: white; 
+    font-size: .8rem; 
+    border: 0;  
+    padding: 10px;
+}
+ 
+.seksjon {
+    width: 50%; 
+    height: 100vh;
+}
+
+.seksjon.bilde img {
+    width: 100vw;
+    height: 100vh;
+    top: 0; 
+    position: relative;
+    object-fit: scale-down;
+}
+
+
+.seksjon.tekst p {
+    width: 440px;
+    height: auto;
+    margin: 0px auto;
+  
+    position: relative;
+    top: 200px; 
+}
+
+
+/* Seksjon en */
+
+.en.bilde img  { 
+    left: 0; 
+    object-position: top left; 
+ }
+
+ .en.tekst h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif; 
+    line-height: 1.4em;
+    
+    position: absolute;
+    top: 200px;
+    left: 800px;
+
+    opacity: 0;
+    animation: fade-in-right ease 2s forwards;
+    animation-delay: 1s;
+ }
+
+ 
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.en hr{
+    width: 200px; 
+    height: 10px; 
+    position: absolute;
+    top: 500px;
+    left: 800px; 
+
+    border: none; 
+    border-radius: 10px; 
+    background-color: #7f8851;
+    
+    opacity: 0;
+    animation: grow ease 5s forwards;
+    animation-delay: 2.5s;
+ }
+
+
+ @keyframes grow {
+    from {
+        opacity: 0;
+        width: 0; 
+    }
+
+    to {
+        opacity: 1;
+        width: 200px;
+    }
+}   
+
+a#jump {
+    position: relative;
+    top: 670px;
+    left: 0; 
+}
+#jump img {
+    width: 40px; 
+    height: 40px;
+  
+    transition: all 5s ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+ }
+
+ @keyframes pulse {
+     0% {   
+        transform: scale(1);
+     }
+
+     50% {
+         transform: scale(1.1);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+
+ }
+
+/* seksjon to */
+
+.seksjon.to {
+    background-color: #f8f1df;
+}
+
+.to.bilde img {
+    right:100%;
+    object-position: top right; 
+}
+    
+
+.to.tekst p {
+    margin: 0; 
+    top: 100px; 
+    left: 130px; 
+    bottom: 140px;
+}
+
+
+/* seksjon 3 */
+
+.seksjon.tre {
+    background-color: #7f8851;
+}
+.tre.bilde img { 
+    left: 0; 
+    object-position: top left; 
+}
+
+.tre.tekst p {
+    top: 100px; 
+    height: 380px;
+    color: #f8f1df;
+    border-radius: 10px; 
+    padding: 25px; 
+    z-index: 100;
+}
+
+
+/* seksjon 4 */
+
+.seksjon.fire {
+    background-color:  #423e4d;
+}
+
+.fire.bilde {
+    width: 50%;
+}
+.fire.bilde img {
+    right: 40%;
+    object-position: top right center;
+    filter: grayscale(100%) blur(3px);
+    transition: .3s ease-in-out;
+}
+
+
+.fire.tekst p {
+    margin: 0; 
+    top: 120px; 
+    left: 200px; 
+    color: #f8f1df;
+}
+
+.fire button  {
+    width: 160px;
+    height: 40px; 
+    background-color: #ca9b8b;  
+
+    position: relative;
+    left: 200px; 
+    top: 170px; 
+}
+
+
+/* seksjon 5 */
+
+.seksjon.fem {
+    background-color: #fff; 
+}
+.fem.bilde img {
+    left:-400px; 
+    object-position: top left; 
+}
+.fem.tekst p {
+    text-align: center;
+    top: 110px; 
+    height: 380px;
+    padding: 25px; 
+}
+
+#nyFarge { 
+    width: 440px;
+    color: black;
+    background-color: #fff; 
+}
+
+.fem li {
+    width: 440px;
+    margin: 0px auto;
+    position: relative;
+    top: -190px; 
+}
+
+.fem.tekst img {
+    width: 40px; 
+    height: 40px;
+    position: relative;
+    top: 100px;
+    left: 340px; 
+}
+/* seksjon 6 */
+
+.seksjon.seks {
+    background-color:  #ca9b8b;  
+}
+
+.seks.tekst p {
+    top: 200px; 
+   
+}
+.seks.bilde img {
+    right:100%;
+    object-position: top right; 
+}
+
+.seks.tekst img {
+    width: 50px; 
+    height: 50px;
+    position: relative;
+    left: 700px; 
+    top: -20px; 
+}
+
+.speech-bubble {
+    position: relative;
+    top: -600px; 
+    left: 580px; 
+    width: 100px;
+    height: 100px;
+    background: #423e4d;
+    color: white; 
+    border-radius: .5em;
+    padding: 10px; 
+    font-size: .7rem; 
+    text-align: center;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 60%;
+	width: 0;
+    height: 0;
+	border: 30px solid transparent;
+	border-right-color: #423e4d;
+	border-left: 0;
+    border-bottom: 0;
+	margin-top: -15px;
+    margin-left: -35px;
+}
