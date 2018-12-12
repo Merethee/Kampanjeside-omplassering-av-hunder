@@ -23,7 +23,11 @@ body {
 a {
     text-decoration: none; 
     color: white;
- }
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif; 
+}
 
 button {
     width: 180px;
@@ -34,6 +38,7 @@ button {
     border: 0;  
     padding: 10px;
 }
+
 button:hover {
     background-color: #7f8851;
 }
@@ -62,7 +67,7 @@ button:hover {
 }
 
 
-/* Seksjon en */
+/* seksjon en */
 
 .en.bilde img  { 
     left: 0; 
@@ -73,7 +78,6 @@ button:hover {
  .en.tekst h1 {
     font-weight: 700;
     font-size: 3rem;
-    font-family: 'Raleway', sans-serif; 
     line-height: 1.4em;
     
     position: absolute;
@@ -87,6 +91,7 @@ button:hover {
 
  
 @keyframes fade-in-right {
+
     from {
         opacity: 0;
         transform: translateX(-15px);
@@ -98,7 +103,7 @@ button:hover {
     }
 }
 
-.en hr{
+.en hr {
     width: 200px; 
     height: 10px; 
     position: absolute;
@@ -116,6 +121,7 @@ button:hover {
 
 
  @keyframes grow {
+
     from {
         opacity: 0;
         width: 0; 
@@ -132,6 +138,7 @@ a#jump {
     top: 670px;
     left: 0; 
 }
+
 #jump img {
     width: 40px; 
     height: 40px;
@@ -141,6 +148,7 @@ a#jump {
  }
 
  @keyframes pulse {
+
      0% {   
         transform: scale(1);
      }
@@ -204,13 +212,13 @@ a#jump {
 .fire.bilde {
     width: 50%;
 }
+
 .fire.bilde img {
     right: 40%;
     object-position: top right center;
     filter: grayscale(100%) blur(3px);
     transition: .3s ease-in-out;
 }
-
 
 .fire.tekst p {
     margin: 0; 
@@ -235,10 +243,12 @@ a#jump {
 .seksjon.fem {
     background-color: #fff; 
 }
+
 .fem.bilde img {
     left:-400px; 
     object-position: top left; 
 }
+
 .fem.tekst p {
     text-align: center;
     top: 110px; 
@@ -267,6 +277,7 @@ a#jump {
     top: 100px;
     left: 340px; 
 }
+
 /* seksjon 6 */
 
 .seksjon.seks {
@@ -320,7 +331,7 @@ a#jump {
 }
 
 
-/* Responsiv */
+/* responsiv */
 
 @media screen and (max-width: 1185px) {
     
@@ -369,7 +380,6 @@ a#jump {
         object-position:left bottom;  
         object-fit: fill; 
         height: 600px;
-
      }
 
     .en.tekst h1 {
@@ -384,14 +394,12 @@ a#jump {
 
      .to.bilde img {
       display: none; 
-    
     } 
 
     .tre.tekst p{
         color: black; 
         font-size: 14px; 
         left: -200px; 
-   
     }
 
     .tre.bilde img  { 
@@ -406,9 +414,7 @@ a#jump {
 
      .fire.tekst p {
         font-size: 14px; 
-
      }
-
 
     .fem.bilde img { 
         left: 0; 
@@ -423,7 +429,6 @@ a#jump {
         text-align: left; 
     }
 
-    
     .fem li {
         text-align: left; 
         color: #f8f1df;
@@ -441,8 +446,7 @@ a#jump {
     
     .seks.tekst img {
         display: none; 
-    }
-    
+    } 
 }
 
 
