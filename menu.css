@@ -1,10 +1,13 @@
+/* meny */ 
+
 #menu {
-    font-size: .9rem; 
     position: fixed;
     width: 100vw; 
     height: 80px;
     top: 0; 
+
     background-color:white; 
+    font-size: .9rem; 
     z-index: 4000;
 }
 
@@ -15,10 +18,10 @@
     top: 2px;
     left: 2px; 
 }
+
 ul {
     list-style: none; 
-    text-decoration: none; 
-   
+    text-decoration: none;  
 } 
 
 #menu li {
@@ -30,6 +33,7 @@ ul {
 li a {
     color: black;
 }
+
 #menu li:hover {
     border-bottom: 10px solid #6b463e;
     padding-bottom: 9px;
@@ -56,6 +60,7 @@ button:hover {
     position: relative;
     top: 400px; 
 }
+
 #fade {
     display: none;
     position: fixed;
@@ -63,9 +68,9 @@ button:hover {
     left: 0%;
     width: 100%;
     height: 100%;
+
     background-color: black;
     z-index: 1001;
-    -moz-opacity: 0.8;
     opacity: .80;
     filter: alpha(opacity=80);
   }
@@ -77,6 +82,7 @@ button:hover {
     left: 50%;
     max-width: 600px;
     max-height: 360px;
+
     margin-left: -300px;
     margin-top: -180px;
     z-index: 1002;
@@ -84,19 +90,20 @@ button:hover {
   }
   
   #boxclose {
+    display: inline-block;
+    position: absolute;
+    right: 0; 
+    top: 350px;
+
     cursor: pointer;
     color: #fff;
-    border: 1px solid #AEAEAE;
+    border: 2px solid #fff;
     border-radius: 3px;
-    background: #424141;
-    font-size: 31px;
-    font-weight: bold;
-    display: inline-block;
+    background: #6b463e;
+    font-size: 30px;
+
     line-height: 0px;
-    padding: 11px 3px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
+    padding: 11px 3px;   
     z-index: 1002;
     opacity: 0.9;
   }

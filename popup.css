@@ -41,7 +41,8 @@
     }
 }
 
-#cb {
+#cb,
+#cb2 {
     display: none;
 }
 
@@ -65,7 +66,8 @@
     opacity: 0;
 }
 
-#cb:checked~.overlay {
+#cb:checked~.overlay,
+#cb2:checked~.overlay {
     visibility: visible;
     opacity: 1;
 }
