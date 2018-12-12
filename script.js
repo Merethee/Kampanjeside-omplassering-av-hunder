@@ -69,7 +69,7 @@ const _cursor = new Cursor()
 
 ScrollReveal().reveal('.text-animate', { delay: 500 , duration: 1500 , distance: '20px' , origin: "bottom"});
 
-ScrollReveal().reveal('.paw-animate', { delay: 1000 , duration: 1500});
+ScrollReveal().reveal('.paw-animate', { delay: 700 , duration: 2000});
 
 
 // video 
@@ -85,7 +85,6 @@ window.document.onkeydown = function(e) {
   
 function videobox_open() {
     var videoBoxVideo = document.getElementById("dog-video");
-    // window.scrollTo(0, 0);
     document.getElementById('box').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
     videoBoxVideo.play();

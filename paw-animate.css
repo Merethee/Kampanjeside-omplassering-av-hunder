@@ -102,15 +102,25 @@
     86%, 100% {
         transform: translate(190px, 190px) rotate(45deg);
     }
-  } 
-
-
+} 
 
   /* responsiv */
 
-  @media screen and (max-width: 1400px) {
-      
-      .paw-container.cream {
-          display: none; 
-      }
-  }
+@media screen and (max-width: 1400px) {
+    
+    .paw-container.cream {
+        display: none; 
+    }
+}
+
+
+@media screen and (max-width: 1055px) {
+    .paw-container.dark {
+        display: none; 
+    }
+
+    .seksjon.seks {
+        overflow: visible; 
+    }
+}
+

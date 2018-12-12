@@ -116,7 +116,13 @@ button:hover {
     display: none;
   }
 
+  @media screen and (max-width: 768px) {
 
+    button:hover {
+        background-color: #6b463e; 
+    }
+
+}
   @media screen and (max-width: 600px) {
       #menu li {
           display: none; 

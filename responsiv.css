@@ -1,0 +1,176 @@
+
+/* responsiv for style.css */
+
+@media screen and (max-width: 1360px){
+
+    .speech-bubble{
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    
+    .en.tekst h1 {
+        font-size: 2rem;
+        top: 200px;
+        left: 800px; 
+    }
+    .en hr {
+        width: 150px; 
+        top: 400px;
+    }
+
+    .fire.bilde img {
+        display: none; 
+    }
+
+    .fire.tekst p {
+       font-size: 14px; 
+    }
+
+    .fem.bilde img { 
+        object-fit: fill;  
+     }
+
+    .fem.tekst p {
+        color: #f8f1df;
+        font-size: 14px; 
+        left: -200px; 
+        text-align: left; 
+        background: #7f8851; 
+        width: 500px; 
+        border-radius: 10px; 
+    }
+
+    .fem li {
+        text-align: left; 
+        color: #f8f1df;
+        font-size: 13px; 
+        left: -200px;  
+        top: -220px; 
+    }
+
+   
+    @keyframes grow {
+        from {
+            opacity: 0;
+            width: 0; 
+        }
+    
+        to {
+            opacity: 1;
+            width: 150px;
+        }
+    }   
+
+    #jump {
+        display: none; 
+    }
+
+    .fem.tekst img {
+       display: none;  
+    }
+}
+
+@media screen and (max-width: 1055px) {
+
+    .seksjon.en {
+        height: 600px;
+    }
+
+    .en.bilde img { 
+        left: 0; 
+        object-position:left bottom;  
+        object-fit: fill; 
+        height: 600px;
+     }
+
+    .en.tekst h1 {
+       display: none; 
+    }
+
+    .en hr {
+        display: none; 
+    }
+
+    .to.tekst p {
+        font-size: 14px; 
+     }
+
+    .to.bilde img {
+         display: none; 
+    } 
+
+    .tre.tekst p {
+        font-size: 14px; 
+        left: -200px; 
+        background: #7f8851;
+        height: 340px;
+    }
+
+    .tre.bilde img  { 
+        object-position: top;  
+        object-fit: cover;  
+     }
+
+    .seks.bilde img {
+        display: none; 
+    }
+
+    .seks.tekst img {
+        display: none; 
+    } 
+
+    .seks.tekst p {
+        font-size: 14px; 
+        left: 100px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .fire button:hover  {
+        background-color: #ca9b8b;  
+    }
+
+    #dialog {
+        display: none; 
+    }
+
+    .to.tekst p {
+        top: 80px; 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .to.tekst p {
+        left: 20px; 
+        width: 300px; 
+    }
+
+    .fire.tekst p {
+        left: 20px; 
+        width: 350px; 
+    }
+
+    .fem li {
+        width: 300px;
+    }
+
+    .fem.bilde img {
+        display: none; 
+    }
+        
+    .seks.tekst p {
+        left: 20px; 
+        width: 300px; 
+        z-index: 99999;
+    }
+}
+
+
+
+

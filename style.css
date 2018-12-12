@@ -174,7 +174,6 @@ a#jump {
     object-position: top right; 
 }
     
-
 .to.tekst p {
     margin: 0; 
     top: 100px; 
@@ -188,6 +187,7 @@ a#jump {
 .seksjon.tre {
     background-color: #7f8851;
 }
+
 .tre.bilde img { 
     left: 0; 
     object-position: top left; 
@@ -201,7 +201,6 @@ a#jump {
     padding: 25px; 
     z-index: 100;
 }
-
 
 /* seksjon 4 */
 
@@ -256,12 +255,6 @@ a#jump {
     padding: 25px; 
 }
 
-#nyFarge { 
-    width: 440px;
-    color: black;
-    background-color: #fff; 
-}
-
 .fem li {
     width: 440px;
     margin: 0px auto;
@@ -288,6 +281,7 @@ a#jump {
     top: 200px; 
    
 }
+
 .seks.bilde img {
     right:100%;
     object-position: top right; 
@@ -329,155 +323,4 @@ a#jump {
 	margin-top: -15px;
     margin-left: -35px;
 }
-
-
-/* responsiv */
-
-@media screen and (max-width: 1185px) {
-    
-    .en.tekst h1 {
-        font-size: 2rem;
-        top: 200px;
-        left: 800px; 
-    }
-    .en hr {
-        width: 150px; 
-        top: 400px;
-    }
-   
-    @keyframes grow {
-        from {
-            opacity: 0;
-            width: 0; 
-        }
-    
-        to {
-            opacity: 1;
-            width: 150px;
-        }
-    }   
-
-    #jump {
-        display: none; 
-    }
-
-    .fem.tekst img {
-       display: none;  
-    }
-
-    .speech-bubble{
-        display: none; 
-    }
-}
-
-@media screen and (max-width: 1055px) {
-
-    .seksjon.en {
-        height: 600px;
-    }
-    .en.bilde img  { 
-        left: 0; 
-        object-position:left bottom;  
-        object-fit: fill; 
-        height: 600px;
-     }
-
-    .en.tekst h1 {
-       display: none; 
-    }
-    .en hr {
-        display: none; 
-    }
-    .to.tekst p {
-        font-size: 14px; 
-     }
-
-     .to.bilde img {
-      display: none; 
-    } 
-
-    .tre.tekst p{
-        color: black; 
-        font-size: 14px; 
-        left: -200px; 
-    }
-
-    .tre.bilde img  { 
-        left: 0; 
-        object-position:left bottom;  
-        object-fit: fill; 
-     }
-
-     .fire.bilde img {
-         display: none; 
-     }
-
-     .fire.tekst p {
-        font-size: 14px; 
-     }
-
-    .fem.bilde img { 
-        left: 0; 
-        object-position:left bottom;  
-        object-fit: fill; 
-     }
-
-     .fem.tekst p {
-        color: #f8f1df;
-        font-size: 14px; 
-        left: -200px; 
-        text-align: left; 
-    }
-
-    .fem li {
-        text-align: left; 
-        color: #f8f1df;
-        font-size: 14px; 
-        left: -200px;  
-    }
-
-    .seks.tekst p {
-        font-size: 14px; 
-       
-    }
-    .seks.bilde img {
-        display:none; 
-    }
-    
-    .seks.tekst img {
-        display: none; 
-    } 
-}
-
-
-@media screen and (max-width: 600px) {
-    
-    .to.tekst p {
-        left: 20px; 
-        width: 300px; 
-    }
-
-    .tre.tekst p {
-        width: 350px; 
-        top: 50px; 
-    }
-
-    .fire.tekst p {
-        left: 20px; 
-        width: 350px; 
-    }
-
-    .fem li {
-        width: 300px;
-    }
-        
-    .seks.tekst p {
-        left: 20px; 
-        width: 300px; 
-        z-index: 99999;
-    }
-}
-
-
-
 

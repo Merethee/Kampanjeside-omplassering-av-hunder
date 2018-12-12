@@ -75,6 +75,11 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    #fill-container {
+        top: 140px; 
+    }
+}
 
 @media screen and (max-width: 600px) {
     
