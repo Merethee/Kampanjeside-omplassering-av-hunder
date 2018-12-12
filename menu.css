@@ -116,6 +116,8 @@ button:hover {
     display: none;
 }
 
+/* responsiv */
+
 @media screen and (max-width: 768px) {
 
     button:hover {
