@@ -1,5 +1,5 @@
+// navigation indicator
 
-// process bar top on scroll
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -9,7 +9,8 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// Custom cursor 
+
+// custom cursor 
 
 class Cursor {
   constructor() {
@@ -56,23 +57,61 @@ initEvent() {
    })
 }
 
-    setStylesOnElement(styles, element) {
+setStylesOnElement(styles, element) {
         Object.assign(element.style, styles);
     }
 }
 
-
 const _cursor = new Cursor()
 
 
-// Animasjon når man er på seksjonen 
+// animasjon når man er på seksjonen 
 
-    ScrollReveal().reveal('.text-animate', { delay: 500 , duration: 1500 , distance: '20px' , origin: "bottom"});
+ScrollReveal().reveal('.text-animate', { delay: 500 , duration: 1500 , distance: '20px' , origin: "bottom"});
 
-    ScrollReveal().reveal('.paw-animate', { delay: 1000 , duration: 1500});
+ScrollReveal().reveal('.paw-animate', { delay: 1000 , duration: 1500});
 
 
-    // Fill bar seksjon 2
+// video 
+
+window.document.onkeydown = function(e) {
+    if (!e) {
+      e = event;
+    }
+    if (e.keyCode == 27) { // kan lukke video ved å trykke "esc"
+      videobox_close();
+    }
+}
+  
+function videobox_open() {
+    var videoBoxVideo = document.getElementById("dog-video");
+    // window.scrollTo(0, 0);
+    document.getElementById('box').style.display = 'block';
+    document.getElementById('fade').style.display = 'block';
+    videoBoxVideo.play();
+}
+  
+function videobox_close() {
+    var videoBoxVideo = document.getElementById("dog-video");
+    document.getElementById('box').style.display = 'none';
+    document.getElementById('fade').style.display = 'none';
+    videoBoxVideo.pause();
+}
+
+
+// alert boks for "å bli livredder"
+
+jQuery(document).ready(function($){
+    $("#dialog").hide();
+    setTimeout(function(){
+        $("#dialog").dialog({
+            autoOpen: true
+        });
+    }, 95000);
+});
+
+
+// fill bar (seksjon 2)
 
 const seksjon = document.getElementById("jump_one");
 const energi = document.getElementById("fill-en"); 
@@ -114,7 +153,6 @@ const animasjonST = stimuli.animate(keyframesST, settings);
 
 document.onscroll = function() {
 
-
     var rect = seksjon.getBoundingClientRect();
 
     if(rect.top < 350 && !harBlittAnimert) { 
@@ -124,58 +162,18 @@ document.onscroll = function() {
         animasjonST.play();
 
         harBlittAnimert = true;
-
     } 
-  
 }
 
-// Alert boks for "å bli livredder"
+// hover knapp - bilde fra grå til farger (seksjon 4)
 
-jQuery(document).ready(function($){
-    $("#dialog").hide();
-    setTimeout(function(){
-        $("#dialog").dialog({
-            autoOpen: true
-        });
-    }, 95000);
+const hoverOnButton = document.getElementById("hover-btn");
+const imageChange = document.getElementById("bilde-endres");
+
+hoverOnButton.addEventListener("mouseover", function() {
+    imageChange.style.filter = "grayscale(0) blur(0)";
 });
 
-// Video 
-
-// window.document.onkeydown = function(e) {
-//     if (!e) {
-//       e = event;
-//     }
-//     if (e.keyCode == 27) {
-//       videobox_close();
-//     }
-//   }
-  
-  function videobox_open() {
-    var videoBoxVideo = document.getElementById("dog-video");
-    // window.scrollTo(0, 0);
-    document.getElementById('box').style.display = 'block';
-    document.getElementById('fade').style.display = 'block';
-    videoBoxVideo.play();
-  }
-  
-  function videobox_close() {
-    var videoBoxVideo = document.getElementById("dog-video");
-    document.getElementById('box').style.display = 'none';
-    document.getElementById('fade').style.display = 'none';
-    videoBoxVideo.pause();
-  }
-
-
-  // Hover button - image change (seksjon 4)
-
-  const hoverOnButton = document.getElementById("hover-btn");
-  const imageChange = document.getElementById("bilde-endres");
-
-  hoverOnButton.addEventListener("mouseover", function() {
-     imageChange.style.filter = "grayscale(0) blur(0)";
-  });
-
-  hoverOnButton.addEventListener("mouseout", function(){
+hoverOnButton.addEventListener("mouseout", function(){
     imageChange.style.filter = "grayscale(100%) blur(3px)";
-  });
+});
