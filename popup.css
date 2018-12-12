@@ -1,8 +1,10 @@
+/* popup */ 
 
 .knapp-popup {
     width: 1000px;
     height: 100px;
     margin: 0 auto;
+
     position: relative;
     top: -500px;
     left: 50px;
@@ -28,6 +30,7 @@
 }
 
 @keyframes scale {
+
     0% {
         transform: scale(1);
     }
@@ -46,7 +49,7 @@
     display: none;
 }
 
-#popup1{
+#popup1 {
     position: relative;
     left: 0;
 }
@@ -88,9 +91,9 @@
     position: absolute;
     top: 20px;
     right: 30px;
+    
     transition: all 200ms;
     font-size: 20px;
-
     text-decoration: none;
     color: #333;
 }
@@ -100,8 +103,10 @@
 }
 
 
-/* Responsiv */
+/* responsiv */
+
 @media screen and (max-width: 1185px) {
+
     .knapp-popup {
         display: none; 
     }
