@@ -73,9 +73,9 @@ button:hover {
     z-index: 1001;
     opacity: .80;
     filter: alpha(opacity=80);
-  }
+}
   
-  #box {
+#box {
     display: none;
     position: absolute;
     top: 50%;
@@ -87,9 +87,9 @@ button:hover {
     margin-top: -180px;
     z-index: 1002;
     overflow: visible;
-  }
+}
   
-  #boxclose {
+#boxclose {
     display: inline-block;
     position: absolute;
     right: 0; 
@@ -106,28 +106,32 @@ button:hover {
     padding: 11px 3px;   
     z-index: 1002;
     opacity: 0.9;
-  }
+}
   
-  .boxclose:before {
+.boxclose:before {
     content: "×";
-  }
-  
-  #fade:hover ~ #boxclose {
-    display: none;
-  }
+}
 
-  @media screen and (max-width: 768px) {
+#fade:hover ~ #boxclose {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
 
     button:hover {
         background-color: #6b463e; 
     }
 
+    #menu li:hover {
+        border-bottom: none; 
+    }
 }
-  @media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
       #menu li {
           display: none; 
       }
       #menu button{
         right: 120px; 
       }
-  }
+}
