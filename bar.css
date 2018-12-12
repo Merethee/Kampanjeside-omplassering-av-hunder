@@ -76,6 +76,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     #fill-container {
         top: 140px; 
     }
@@ -86,6 +87,13 @@
     #fill-container {
         left: 20px; 
         top: 170px; 
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    #fill-container {
+        display: none;  
     }
 }
 

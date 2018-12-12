@@ -172,5 +172,41 @@
 }
 
 
+@media screen and (max-width: 375px) {
 
+    .to.tekst p {
+        top: 100px; 
+    }
+
+    .tre.tekst p {
+        font-size: 13px; 
+        left: -200px; 
+        width: 300px; 
+        height: 450px;
+    }
+
+    .tre.bilde img  { 
+        object-position: top;  
+        object-fit: cover;  
+     }
+
+     .fire.tekst p {
+        top: 80px; 
+        width: 320px; 
+        font-size: 13px; 
+    }
+
+    .fire button {
+        top: 130px; 
+        left: 90px; 
+    }
+
+    .seksjon.fem {
+        display: none; 
+    }
+
+    .seks.tekst p {
+        top: 130px; 
+    }
+}
 
